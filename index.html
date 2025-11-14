@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Fylo landing page with dark theme and features grid
+    </title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="text-white font-[Open_Sans]">
+    <div class="bg-[hsl(217,28%,15%)]">
+      <nav class="flex justify-between items-center py-12 px-5 md:px-14">
+        <img class="w-[85px] md:w-auto" src="images/logo.svg" alt="" />
+        <ul class="flex space-x-5 md:space-x-10 font-[Raleway]">
+          <li
+            class="hover:underline hover:text-white cursor-pointer text-white/85 text-sm"
+          >
+            Features
+          </li>
+          <li
+            class="hover:underline hover:text-white cursor-pointer text-white/85 text-sm"
+          >
+            Team
+          </li>
+          <li
+            class="hover:underline hover:text-white cursor-pointer text-white/85 text-sm"
+          >
+            Sign In
+          </li>
+        </ul>
+      </nav>
+      <div class="relative h-[50vh] md:h-[100vh]">
+        <div class="max-w-3xl mx-auto relative z-10 pb-40 px-5">
+          <div class="flex justify-center mb-8">
+            <img src="images/illustration-intro.png" alt="" />
+          </div>
+          <div class="text-center space-y-7">
+            <h1 class="text-2xl md:text-4xl font-bold font-[Raleway]">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p class="md:px-36">
+              Fylo stores all your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends
+              family, and co-workers.
+            </p>
+            <button
+              class="bg-gradient-to-r from-[hsl(176,68%,64%)] to-[hsl(198,60%,50%)] px-20 py-3 rounded-full cursor-pointer hover:to-[hsl(176,68%,64%)] transition duration-300 font-bold font-[Raleway]"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <div class="absolute bottom-0 w-full">
+          <img
+            class="hidden md:block"
+            src="images/bg-curvy-desktop.svg"
+            alt=""
+          />
+          <img class="md:hidden" src="images/bg-curvy-mobile.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <section class="bg-[hsl(218,28%,13%)] pt-80 md:pt-40">
+      <!--  -->
+      <div
+        class="grid md:grid-cols-2 items-center max-w-4xl px-5 mx-auto gap-x-36 gap-y-20 mb-20"
+      >
+        <div class="text-center space-y-2">
+          <div class="flex justify-center mb-5">
+            <img src="images/icon-access-anywhere.svg" alt="" />
+          </div>
+          <h1 class="font-bold font-[Raleway] text-lg">
+            Access your files, anywhere
+          </h1>
+          <p class="text-sm text-white/85">
+            The ability to use a smartphone, tablet, or computer to access your
+            account means your files follow you everywhere.
+          </p>
+        </div>
+        <div class="text-center space-y-2">
+          <div class="flex justify-center mb-5">
+            <img src="images/icon-security.svg" alt="" />
+          </div>
+          <h1 class="font-bold font-[Raleway] text-lg">
+            Security you can trust
+          </h1>
+          <p class="text-sm text-white/85">
+            2-factor authentication and user-controlled encryption are just a
+            couple of the security features we allow to help secure your files.
+          </p>
+        </div>
+        <div class="text-center space-y-2">
+          <div class="flex justify-center mb-5">
+            <img src="images/icon-collaboration.svg" alt="" />
+          </div>
+          <h1 class="font-bold font-[Raleway] text-lg">
+            Real-time collaboration
+          </h1>
+          <p class="text-sm text-white/85">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+        </div>
+        <div class="text-center space-y-2">
+          <div class="flex justify-center mb-5">
+            <img src="images/icon-any-file.svg" alt="" />
+          </div>
+          <h1 class="font-bold font-[Raleway] text-lg">
+            Store any type of file
+          </h1>
+          <p class="text-sm text-white/85">
+            Whether you're sharing holidays photos or work documents, Fylo has
+            you covered allowing for all file types to be securely stored and
+            shared.
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div
+        class="grid lg:grid-cols-2 items-center max-w-7xl mx-auto gap-20 px-5 pb-20"
+      >
+        <img src="images/illustration-stay-productive.png" alt="" />
+        <div class="space-y-4">
+          <h1 class="font-[Raleway] font-bold text-xl md:text-4xl lg:pr-48">
+            Stay productive, wherever you are
+          </h1>
+          <p class="text-sm md:text-base text-white/85">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+          <p class="text-sm md:text-base text-white/85">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+          <a
+            class="flex items-center gap-2 border-b-2 w-fit border-[hsl(176,68%,64%)] pb-1 group hover:border-white/85"
+            href=""
+          >
+            <p
+              class="text-sm md:text-base text-[hsl(176,68%,64%)] group-hover:text-white/85"
+            >
+              See how Fylo works
+            </p>
+            <img
+              class="group-hover:[filter:brightness(0)_saturate(100%)_invert(100%)_sepia(0%)_saturate(7498%)_hue-rotate(320deg)_brightness(103%)_contrast(104%)]"
+              src="images/icon-arrow.svg"
+              alt=""
+            />
+          </a>
+       
+        </div>
+      </div>
+      <!--  -->
+      <div class="pt-20 px-10">
+        <div class="relative max-w-7xl mx-auto pb-80">
+          <div class="absolute md:-left-2 left-2 -top-5.5 md:-top-8.5 inset-0">
+            <img class="w-[30px] md:w-auto" src="images/bg-quotes.png" alt="" />
+          </div>
+          <div class="relative grid lg:grid-cols-3 gap-10">
+            <div class="bg-[hsl(219,30%,18%)] p-7 rounded-md">
+              <p class="mt-5 text-white/85 text-sm md:text-base">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+              <div class="flex items-center gap-3 mt-7">
+                <div>
+                  <img
+                    class="size-10 rounded-full"
+                    src="images/profile-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm">Satish Patel</h4>
+                  <span class="text-xs text-white/85">
+                    Founder & CEO, Huddle</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="bg-[hsl(219,30%,18%)] p-7 rounded-md">
+              <p class="mt-5 text-white/85 text-sm md:text-base">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+
+              <div class="flex items-center gap-3 mt-7">
+                <div>
+                  <img
+                    class="size-10 rounded-full"
+                    src="images/profile-2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm">Bruce McKenzie</h4>
+                  <span class="text-xs text-white/85">
+                    Founder & CEO, Huddle
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[hsl(219,30%,18%)] p-7 rounded-md">
+              <p class="mt-5 text-white/85 text-sm md:text-base">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+
+              <div class="flex items-center gap-3 mt-7">
+                <div>
+                  <img
+                    class="size-10 rounded-full"
+                    src="images/profile-3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm">Iva Boyd</h4>
+                  <span class="text-xs text-white/85">
+                    Founder & CEO, Huddle</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section class="relative bg-[hsl(216,53%,9%)] pt-56 md:pt-40 pb-20">
+      <div class="mx-5 absolute inset-0 -top-52 md:-top-36 h-fit">
+        <div
+          class="h-fit bg-[hsl(217,28%,15%)] text-center max-w-4xl mx-auto px-7 md:px-20 py-10 space-y-6 rounded-lg"
+        >
+          <h1 class="font-bold text-xl md:text-3xl font-[Raleway]">
+            Get early access today
+          </h1>
+          <p class="text-sm md:px-12 text-white/85">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+          <form
+            action=""
+            class="flex flex-col md:flex-row gap-7 justify-center"
+          >
+            <input
+              class="px-8 py-3 rounded-full w-full bg-white text-black focus:outline-none placeholder:text-black placeholder:text-sm placeholder:opacity-10"
+              type="email"
+              placeholder="email@example.com"
+            />
+            <input
+              class="bg-gradient-to-r from-[hsl(176,68%,64%)] to-[hsl(198,60%,50%)] hover:to-[hsl(176,68%,64%)] transition duration-300 rounded-full py-3 px-8 font-[Raleway] font-bold"
+              type="submit"
+              name=""
+              id=""
+              value="Get Started For Free"
+            />
+          </form>
+        </div>
+      </div>
+      <!--  -->
+      <div class="max-w-7xl mx-auto px-5">
+        <img src="images/logo.svg" alt="" />
+        <div class="flex flex-col lg:flex-row justify-between text-sm mt-8">
+          <div class="flex items-start gap-5 max-w-xs">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="text-white/85">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="space-y-4 mt-4 lg:mt-0">
+            <div class="flex gap-5 items-center">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p class="text-white/85">+1-543-123-4567</p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="text-white/85">example@fylo.com</p>
+            </div>
+          </div>
+          <div class="mt-16 lg:mt-0">
+            <ul class="space-y-2 text-white/85">
+              <li class="hover:text-white hover:font-medium">
+                <a href="">About Us</a>
+              </li>
+              <li class="hover:text-white hover:font-medium">
+                <a href="">Jobs</a>
+              </li>
+              <li class="hover:text-white hover:font-medium">
+                <a href="">Press</a>
+              </li>
+              <li class="hover:text-white hover:font-medium">
+                <a href="">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-12 lg:mt-0">
+            <ul class="space-y-2 text-white/85">
+              <li class="hover:text-white hover:font-medium">
+                <a href="">Contact Us</a>
+              </li>
+              <li class="hover:text-white hover:font-medium">
+                <a href="">Terms</a>
+              </li>
+              <li class="hover:text-white hover:font-medium">
+                <a href="">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center gap-3 mt-16 lg:mt-0">
+            <div
+              class="border rounded-full aspect-square flex justify-center items-center size-7 hover:text-[hsl(176,68%,64%)]"
+            >
+              <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div
+              class="border rounded-full aspect-square flex justify-center items-center size-7 hover:text-[hsl(176,68%,64%)]"
+            >
+              <a href=""> <i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div
+              class="border rounded-full aspect-square flex justify-center items-center size-7 hover:text-[hsl(176,68%,64%)]"
+            >
+              <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
